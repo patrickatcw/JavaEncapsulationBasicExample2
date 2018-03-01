@@ -18,7 +18,7 @@ public class Main {
 
         //step 9 from step 8 in Printer class
         //step 10, creating instance
-        Printer printer = new Printer(50,true);
+        Printer printer = new Printer(50,false);
         System.out.println("initial page count = " +
                 printer.getPagesPrinted());
 
@@ -50,6 +50,12 @@ public class Main {
          */
 
         //step 15 change true to false for a test to see what happens?
+        //results
+        /*
+        initial page count = 0
+        Pages printed was 4 new total print count for printer = 4
+        Pages printed was 2 new total print count for printer = 6
+         */
 
     }
 }
