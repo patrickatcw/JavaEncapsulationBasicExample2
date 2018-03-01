@@ -16,6 +16,41 @@ public class Main {
 
     public static void main(String[] args) {
 
-    }
+        //step 9 from step 8 in Printer class
+        //step 10, creating instance
+        Printer printer = new Printer(50,true);
+        System.out.println("initial page count = " +
+                printer.getPagesPrinted());
 
+        //step 11 instance for pagesPrinted
+        int pagesPrinted = printer.printPages(4);
+        System.out.println("Pages printed was " + pagesPrinted + " new total" +
+                " print count for printer = " + printer.getPagesPrinted());
+
+        //step 12 run....
+        //results
+        /*
+        initial page count = 0
+        Printing in duplex mode  //boolean true
+        Pages printed was 2 new total print count for printer = 2
+        */
+
+        //step 13 testing again
+        pagesPrinted = printer.printPages(2);
+        System.out.println("Pages printed was " + pagesPrinted + " new total" +
+                " print count for printer = " + printer.getPagesPrinted());
+        //step 14 then run....
+        //results;
+        /*
+        initial page count = 0
+        Printing in duplex mode
+        Pages printed was 2 new total print count for printer = 2
+        Printing in duplex mode
+        Pages printed was 1 new total print count for printer = 3
+         */
+
+        //step 15 change true to false for a test to see what happens?
+
+    }
 }
+
